@@ -1,0 +1,17 @@
+extends:
+  - prettier
+env:
+  es2021: true
+  node: true
+parser: "@typescript-eslint/parser"
+parserOptions:
+  sourceType: module
+ignorePatterns:
+  - dist/
+rules:
+  comma-dangle:
+    - error
+    - always-multiline
+  quotes:
+    - error
+    - single
